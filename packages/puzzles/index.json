@@ -1,0 +1,807 @@
+{
+  "puzzles": [
+    
+    {
+      "id": "skyscrapers-4x4-sample-1",
+      "type": "skyscrapers",
+      "title": "Skyscrapers 4×4 (Easy)",
+      "data": {
+        "size": 4,
+        "top":    [2, 2, 1, 3],
+        "bottom": [1, 3, 3, 2],
+        "left":   [3, 2, 2, 1],
+        "right":  [1, 2, 2, 3],
+        "mode": { "visibility": "count", "diagonals": false }
+      }
+    },
+    {
+      "id": "skyscrapers-5x5-diagonals-sum-1",
+      "type": "skyscrapers",
+      "title": "Skyscrapers 5×5 (Diagonals + Sums)",
+      "data": {
+        "size": 5,
+        "top":    [10, 8, 9, 7, 6],
+        "bottom": [8, 7, 9, 6, 7],
+        "left":   [9, 7, 8, 10, 6],
+        "right":  [6, 9, 7, 6, 9],
+        "mode": { "visibility": "sum", "diagonals": true }
+      }
+    },
+    {
+      "id": "sudoku-sample-1",
+      "type": "sudoku",
+      "title": "Sample Sudoku",
+      "data": {
+        "size": 9,
+        "givens": [
+          { "r": 0, "c": 1, "v": 3 },
+          { "r": 0, "c": 4, "v": 2 },
+          { "r": 0, "c": 6, "v": 6 },
+          { "r": 1, "c": 0, "v": 9 },
+          { "r": 1, "c": 3, "v": 3 },
+          { "r": 1, "c": 5, "v": 5 },
+          { "r": 1, "c": 8, "v": 1 },
+          { "r": 2, "c": 2, "v": 1 },
+          { "r": 2, "c": 7, "v": 3 },
+          { "r": 3, "c": 2, "v": 8 },
+          { "r": 3, "c": 3, "v": 1 },
+          { "r": 3, "c": 7, "v": 4 },
+          { "r": 4, "c": 2, "v": 7 },
+          { "r": 4, "c": 6, "v": 3 },
+          { "r": 5, "c": 1, "v": 9 },
+          { "r": 5, "c": 4, "v": 4 },
+          { "r": 5, "c": 8, "v": 7 },
+          { "r": 6, "c": 2, "v": 2 },
+          { "r": 6, "c": 5, "v": 6 },
+          { "r": 6, "c": 6, "v": 9 },
+          { "r": 7, "c": 0, "v": 5 },
+          { "r": 7, "c": 3, "v": 2 },
+          { "r": 7, "c": 5, "v": 1 },
+          { "r": 7, "c": 8, "v": 3 },
+          { "r": 8, "c": 2, "v": 3 },
+          { "r": 8, "c": 4, "v": 5 },
+          { "r": 8, "c": 7, "v": 2 }
+        ]
+      }
+    },
+    {
+      "id": "kenken-sample-4x4-1",
+      "type": "kenken",
+      "title": "KenKen 4×4 (Easy)",
+      "data": {
+        "size": 4,
+        "cages": [
+          { "cells": [{"r":0,"c":0},{"r":0,"c":1}], "op": "add", "target": 5 },
+          { "cells": [{"r":0,"c":2},{"r":1,"c":2}], "op": "add", "target": 7 },
+          { "cells": [{"r":0,"c":3}], "op": "add", "target": 3 },
+          { "cells": [{"r":1,"c":0},{"r":2,"c":0}], "op": "add", "target": 7 },
+          { "cells": [{"r":1,"c":1},{"r":1,"c":3}], "op": "add", "target": 7 },
+          { "cells": [{"r":2,"c":1},{"r":2,"c":2}], "op": "add", "target": 5 },
+          { "cells": [{"r":2,"c":3},{"r":3,"c":3}], "op": "add", "target": 7 },
+          { "cells": [{"r":3,"c":0},{"r":3,"c":1},{"r":3,"c":2}], "op": "add", "target": 9 }
+        ]
+      }
+    },
+    {
+      "id": "nurikabe-sample-1",
+      "type": "nurikabe",
+      "title": "Nurikabe 7x7",
+      "data": {
+        "width": 7,
+        "height": 7,
+        "clues": [
+          [-1,-1,-1,-1,-1,-1,-1],
+          [-1, 1,-1,-1,-1, 2,-1],
+          [-1,-1,-1,-1,-1,-1,-1],
+          [-1,-1,-1, 3,-1,-1,-1],
+          [-1,-1,-1,-1,-1,-1,-1],
+          [-1, 2,-1,-1,-1, 1,-1],
+          [-1,-1,-1,-1,-1,-1,-1]
+        ]
+      }
+    },
+    {
+      "id": "hashi-sample-1",
+      "type": "hashi",
+      "title": "Bridges 12x12",
+      "data": {
+        "width": 12,
+        "height": 12,
+        "islands": [
+          { "r": 1, "c": 1, "count": 2 },
+          { "r": 1, "c": 5, "count": 3 },
+          { "r": 1, "c": 9, "count": 2 },
+          { "r": 3, "c": 3, "count": 3 },
+          { "r": 3, "c": 7, "count": 4 },
+          { "r": 3, "c": 11, "count": 2 },
+          { "r": 5, "c": 1, "count": 3 },
+          { "r": 5, "c": 5, "count": 4 },
+          { "r": 5, "c": 9, "count": 3 },
+          { "r": 7, "c": 3, "count": 2 },
+          { "r": 7, "c": 7, "count": 3 },
+          { "r": 7, "c": 11, "count": 2 },
+          { "r": 9, "c": 1, "count": 2 },
+          { "r": 9, "c": 5, "count": 3 },
+          { "r": 9, "c": 9, "count": 2 },
+          { "r": 11, "c": 3, "count": 2 },
+          { "r": 11, "c": 7, "count": 2 },
+          { "r": 11, "c": 11, "count": 2 }
+        ]
+      }
+    },
+    {
+      "id": "hitori-sample-1",
+      "type": "hitori",
+      "title": "Hitori 8x8",
+      "data": {
+        "width": 8,
+        "height": 8,
+        "grid": [
+          [1,2,3,4,5,6,7,8],
+          [2,3,4,5,6,7,8,1],
+          [3,4,5,6,7,8,1,2],
+          [4,5,6,7,8,1,2,3],
+          [5,6,7,8,1,2,3,4],
+          [6,7,8,1,2,3,4,5],
+          [7,8,1,2,3,4,5,6],
+          [8,1,2,3,4,5,6,7]
+        ]
+      }
+    },
+    {
+      "id": "akari-sample-1",
+      "type": "akari",
+      "title": "Light Up Mini",
+      "data": {
+        "width": 7,
+        "height": 7,
+        "grid": [
+          [{},{},{},{"block":true},{},{},{"block":true}],
+          [{},{"block":true},{},{},{},{},{}],
+          [{},{},{},{},{"block":true},{},{}],
+          [{"block":true},{},{},{},{},{},{"block":true}],
+          [{},{},{"block":true},{},{},{},{"block":true}],
+          [{},{},{},{},{},{},{}],
+          [{"block":true},{},{},{"block":true},{},{},{"block":true}]
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-koko-bananas",
+      "type": "riddles",
+      "title": "Desert Bananas With Thieves",
+      "data": {
+        "prompt": "A caravan of N camels must transport as many bananas as possible from oasis A to oasis B, M miles away. Each camel can carry at most C bananas and eats one banana per mile traveled (carried or not). Bananas can be dropped and picked up en route. For N=3, C=3000, M=1000, what is the maximum bananas deliverable to B?",
+        "answers": ["533"],
+        "answerType": "number",
+        "category": "optimization",
+        "difficulty": 5,
+        "hints": [
+          "Stage the journey: initially all 3 shuttle to move stock forward.",
+          "Burn rate changes with active camels; compute breakpoint distances.",
+          "Classic answer sequence yields 533 bananas delivered."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-bridge-truth-lie",
+      "type": "riddles",
+      "title": "Bridge of Truth and Lie",
+      "data": {
+        "prompt": "You face two guards: one always tells the truth, one always lies. One bridge leads to freedom, the other to doom. You may ask a single question to one guard to guarantee choosing the freedom bridge. Provide a question that works regardless of whom you ask.",
+        "answers": ["if i asked the other guard which bridge leads to freedom, what would he say? then take the other", "ask other guard question trick"],
+        "answerType": "multiline",
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Force both types to point at the same (wrong) bridge.",
+          "Ask about what the other would say; invert the answer.",
+          "Take the opposite of the indicated bridge."
+        ]
+      }
+    },
+    {
+      "id": "riddles-math-magic-square-3",
+      "type": "riddles",
+      "title": "3×3 Magic Completion",
+      "data": {
+        "prompt": "Complete a 3×3 magic square using the numbers 1..9 so that each row, column, and main diagonals sum to 15. Enter the square as rows separated by newlines (e.g., '8 1 6\n3 5 7\n4 9 2').",
+        "answers": ["8 1 6 | 3 5 7 | 4 9 2", "2 7 6 | 9 5 1 | 4 3 8", "4 3 8 | 9 5 1 | 2 7 6", "6 1 8 | 7 5 3 | 2 9 4", "4 9 2 | 3 5 7 | 8 1 6", "2 9 4 | 7 5 3 | 6 1 8", "6 7 2 | 1 5 9 | 8 3 4", "8 3 4 | 1 5 9 | 6 7 2"],
+        "answerType": "matrix",
+        "category": "math",
+        "difficulty": 5,
+        "hints": [
+          "The center must be 5.",
+          "Corners are even; edges are odd.",
+          "Use rotation/reflection symmetries to generate all solutions."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-map-coloring",
+      "type": "riddles",
+      "title": "Color the Regions",
+      "data": {
+        "prompt": "A planar map has regions A,B,C,D,E with adjacencies: A-B,C; B-C,D; C-D,E; D-E,A; E-A,B. Find a valid 3-coloring. Enter as key=value comma-separated (e.g., 'A=1,B=2,C=3,D=1,E=2').",
+        "answers": ["a=1,b=2,c=3,d=1,e=2", "a=1,b=3,c=2,d=1,e=3", "a=2,b=1,c=3,d=2,e=1", "a=3,b=1,c=2,d=3,e=1"],
+        "answerType": "mapping",
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Build the adjacency graph and ensure neighbors differ.",
+          "Try assigning A=1; propagate constraints along the cycle.",
+          "There are multiple symmetric solutions."
+        ]
+      }
+    },
+    {
+      "id": "riddles-math-latin-square-4",
+      "type": "riddles",
+      "title": "4×4 Latin Square",
+      "data": {
+        "prompt": "Fill a 4×4 Latin square with symbols 1..4 so that each row and column contains each symbol exactly once. Enter as four rows (e.g., '1 2 3 4\n3 4 1 2\n2 1 4 3\n4 3 2 1').",
+        "answers": ["1 2 3 4 | 3 4 1 2 | 2 1 4 3 | 4 3 2 1", "1 3 4 2 | 4 2 1 3 | 2 4 3 1 | 3 1 2 4"],
+        "answerType": "matrix",
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Start with a canonical Latin square and permute rows/cols.",
+          "Check row and column uniqueness after each placement.",
+          "Use backtracking systematically."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-sudoku-killer-cage",
+      "type": "riddles",
+      "title": "Killer Cage Mini",
+      "data": {
+        "prompt": "In a 4×4 grid, place digits 1..4 so each row/column has all digits. Cages: (r1c1,r1c2)=5; (r1c3,r2c3)=7; (r2c1,r3c1)=5; (r3c2,r3c3,r3c4)=9; (r2c4,r4c4)=5; (r4c1,r4c2,r4c3)=7. Provide the completed grid as rows separated by newlines.",
+        "answers": ["1 4 2 3 | 3 2 4 1 | 2 1 3 4 | 4 3 1 2"],
+        "answerType": "matrix",
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Use cage sums with unique pairs/triples for 1..4.",
+          "Propagate singles from overlaps and Latin constraints.",
+          "Check rows/cols after each cage placement."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-sum-product",
+      "type": "riddles",
+      "title": "Sum and Product",
+      "data": {
+        "prompt": "Two integers x and y satisfy 2 < x < y and x + y ≤ 100. S (told the sum) says: 'I don't know the numbers, but I knew P (told the product) couldn't know.' P says: 'Now I know the numbers.' S says: 'Now I know them too.' What are x and y? Enter them as two numbers (order doesn't matter).",
+        "answers": ["4 13"],
+        "answerType": "pair",
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "S's first statement eliminates sums that can be expressed as a sum of two primes in only one way (Goldbach-like reasoning for even sums).",
+          "P then refines by products that factor uniquely under the remaining sums.",
+          "The unique resolution is {4,13}."
+        ]
+      }
+    },
+    {
+      "id": "riddles-geometry-painted-cube-10",
+      "type": "riddles",
+      "title": "Painted Cube (10×10×10)",
+      "data": {
+        "prompt": "A 10×10×10 cube is painted on the outside, then cut into 1×1×1 cubes. How many small cubes have exactly two faces painted?",
+        "answers": ["96"],
+        "answerType": "number",
+        "category": "geometry",
+        "difficulty": 5,
+        "hints": [
+          "Count edge cubes excluding corners.",
+          "Each of the 12 edges contributes (n−2) such cubes.",
+          "Compute 12×(10−2)."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-100-lockers",
+      "type": "riddles",
+      "title": "100 Lockers",
+      "data": {
+        "prompt": "100 lockers start closed. On pass k (1..100), you toggle every k-th locker. After 100 passes, how many lockers are open?",
+        "answers": ["10"],
+        "answerType": "number",
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "A locker ends open iff it is toggled an odd number of times.",
+          "That happens exactly for perfect squares.",
+          "Count squares ≤ 100."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-domino-chessboard",
+      "type": "riddles",
+      "title": "Domino Tiling Parity",
+      "data": {
+        "prompt": "From an 8×8 chessboard, remove two opposite corner squares. Can the remaining 62 squares be tiled by 31 dominoes (each covering two adjacent squares)?",
+        "answers": ["impossible", "no", "cannot tile"],
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Color parity argument.",
+          "Domino covers one black and one white square.",
+          "The modified board has unequal counts of colors."
+        ]
+      }
+    },
+    {
+      "id": "riddles-math-two-eggs-100",
+      "type": "riddles",
+      "title": "Two Eggs, 100 Floors",
+      "data": {
+        "prompt": "You have 2 identical eggs and a 100-floor building. Find the minimal worst-case number of drops to determine the highest floor from which an egg can be dropped without breaking.",
+        "answers": ["14"],
+        "answerType": "number",
+        "category": "math",
+        "difficulty": 5,
+        "hints": [
+          "Choose floors to minimize the maximum remaining checks after a break.",
+          "Use a decreasing-step strategy k,(k−1),(k−2),... so k(k+1)/2 ≥ 100.",
+          "Smallest k with k(k+1)/2 ≥ 100 is 14."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-untouchable-numbers",
+      "type": "riddles",
+      "title": "Sum of Proper Divisors Trap",
+      "data": {
+        "prompt": "Call a number untouchable if it is not the sum of proper divisors of any positive integer. Prove or disprove: 5 is untouchable, and find the smallest even untouchable number. Enter your numeric answer(s) as a set (space-separated, any order).",
+        "answers": ["2 5", "5 2"],
+        "answerType": "set",
+        "category": "number theory",
+        "difficulty": 5,
+        "hints": [
+          "Use parity and bounds on σ(n)−n for odd/even n.",
+          "Check small cases and exploit that sums for odd n are odd.",
+          "The smallest even untouchable is 2."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-knights-knaves-3",
+      "type": "riddles",
+      "title": "Two Knights, One Knave, Three Statements",
+      "data": {
+        "prompt": "On an island, Knights always tell the truth and Knaves always lie. You meet A, B, and C. A says: 'B is a Knave.' B says: 'A and C are of the same type.' C says: 'I am a Knight.' Determine the types of A, B, and C.",
+        "answers": ["a knight, b knave, c knave", "a=knight b=knave c=knave", "knight knave knave"],
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Assume C is Knight and derive contradiction.",
+          "Use B's claim to couple A and C; combine with A's accusation.",
+          "Only A=Knight, B=Knave, C=Knave satisfies all constraints."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-hats-infinite",
+      "type": "riddles",
+      "title": "Infinite Hat Strategy",
+      "data": {
+        "prompt": "Countably many prisoners stand in a line, each wearing a red or blue hat, seeing all hats in front but not their own or behind. Simultaneously they must say 'red' or 'blue'. Design a strategy to ensure only finitely many are wrong almost surely, and state the minimal bound achievable. Answer with the minimal bound as a number.",
+        "answers": ["1", "0"],
+        "answerType": "number",
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Use equivalence classes modulo a tail-equivalence relation.",
+          "The Axiom of Choice can select a representative sequence (non-constructive).",
+          "All but finitely many prisoners can be correct; in some formulations you can force all but 0 errors on almost all sample paths (measure-theoretic subtlety)."
+        ]
+      }
+    },
+    {
+      "id": "riddles-geometry-sylvester",
+      "type": "riddles",
+      "title": "No Three Collinear?",
+      "data": {
+        "prompt": "Given a finite set of points in the plane, not all collinear, prove there exists a line containing exactly two of the points. For this set: 7 points in general position (no three collinear), provide the minimum number of ordinary lines. Enter the number.",
+        "answers": ["7"],
+        "answerType": "number",
+        "category": "geometry",
+        "difficulty": 5,
+        "hints": [
+          "Sylvester–Gallai theorem.",
+          "In general position with n points, at least n ordinary lines.",
+          "For 7 points, minimum is 7."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-tiling-aztec",
+      "type": "riddles",
+      "title": "Aztec Diamond Domino Count",
+      "data": {
+        "prompt": "How many domino tilings does the order-n Aztec diamond have? Provide the closed form in terms of n as a sequence expression (e.g., '2^(n(n+1)/2)').",
+        "answers": ["2^(n(n+1)/2)", "2^(n*(n+1)/2)"],
+        "answerType": "sequence",
+        "category": "combinatorics",
+        "difficulty": 5,
+        "hints": [
+          "Use the shuffling algorithm or induction via condensation.",
+          "The exponent is quadratic in n.",
+          "Check small n to spot the pattern."
+        ]
+      }
+    },
+    {
+      "id": "riddles-number-theory-egyptian-5-121",
+      "type": "riddles",
+      "title": "Egyptian Fraction Decomposition",
+      "data": {
+        "prompt": "Express 5/121 as a sum of distinct unit fractions with the smallest number of terms. Enter denominators as a tuple 'a b c ...'.",
+        "answers": ["25 605 7260"],
+        "answerType": "tuple",
+        "category": "number theory",
+        "difficulty": 5,
+        "hints": [
+          "Greedy algorithm suggests 1/25 first.",
+          "Reduce the remainder and continue.",
+          "Simplify to distinct unit fractions."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-light-switches",
+      "type": "riddles",
+      "title": "Three Switches, One Room",
+      "data": {
+        "prompt": "Outside a closed room are three light switches; inside the room are three bulbs. Each switch controls one bulb. You may manipulate the switches as you like but may enter the room only once. How can you determine which switch controls which bulb?",
+        "answers": ["turn one on, one on then off, one off; heat reveals the second", "feel the warm bulb", "warmth strategy"],
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Exploit both on/off state and thermal state.",
+          "Leave one switch on, one on briefly then off, one off.",
+          "Identify hot, warm, and cold bulbs to map switches."
+        ]
+      }
+    },
+    {
+      "id": "riddles-math-josephus-41-3",
+      "type": "riddles",
+      "title": "Circle of 41, Step 3",
+      "data": {
+        "prompt": "41 people stand in a circle numbered 1..41. Starting at 1, every 3rd person is eliminated (wrapping around). Which position survives?",
+        "answers": ["31"],
+        "answerType": "number",
+        "category": "math",
+        "difficulty": 5,
+        "hints": [
+          "This is a Josephus problem J(n, k).",
+          "Use recurrence J(n,k) = (J(n-1,k) + k) mod n with J(1,k)=0, then add 1.",
+          "Alternatively, compute in base-2 decomposition for k=2; here k=3 so use recurrence or code mentally."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-water-jugs-331",
+      "type": "riddles",
+      "title": "Measure 1 Liter Exactly",
+      "data": {
+        "prompt": "You have a 3-liter and a 3-liter jug and an unlimited water source. Can you measure exactly 1 liter? If not, adjust the capacities to the classic pair and give a minimal sequence to measure 1 liter.",
+        "answers": ["use 3 and 5 liter jugs sequence", "3 and 5", "3 5"],
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "With two equal jugs (3,3) you cannot get 1 liter; gcd(3,3)=3.",
+          "Use 3 and 5 liter jugs; gcd(3,5)=1 allows any integer measure.",
+          "Fill 3→pour to 5 (2 left in 5), empty 5, pour 1 to 5, fill 3 and top 5 to leave 1 in 3."
+        ]
+      }
+    },
+    {
+      "id": "nonograms-sample-1",
+      "type": "nonograms",
+      "title": "Smiley 5x5",
+      "data": {
+        "rows": [[1,1],[1,1],[1],[1,1],[3]],
+        "cols": [[2],[1,1],[1],[1,1],[2]]
+      }
+    },
+    {
+      "id": "crosswords-sample-1",
+      "type": "crosswords",
+      "title": "Mini 5x5",
+      "data": {
+        "width": 5,
+        "height": 5,
+        "grid": [
+          [{},{},{},{},{}],
+          [{},{"block":true},{},{"block":true},{}],
+          [{},{},{},{},{}],
+          [{},{"block":true},{},{"block":true},{}],
+          [{},{},{},{},{}]
+        ],
+        "clues": {
+          "across": [{"num":1,"clue":"Greeting","answer":"HELLO"}],
+          "down": [{"num":1,"clue":"Opposite of out","answer":"IN"}]
+        }
+      }
+    },
+    {
+      "id": "wordsearch-sample-1",
+      "type": "wordsearch",
+      "title": "Animals",
+      "data": {
+        "width": 8,
+        "height": 8,
+        "grid": [
+          "CATAWOLF",
+          "HENMOUSE",
+          "ELPHDEER",
+          "LLIONFOX",
+          "OTTERBEA",
+          "RBEARANT",
+          "ABIRDZEB",
+          "TSNAKEDO"
+        ],
+        "words": ["CAT","WOLF","HEN","MOUSE","DEER","LION","FOX","OTTER","BEAR","ANT","BIRD","ZEBRA","SNAKE","DOG"]
+      }
+    },
+    {
+      "id": "cryptogram-sample-1",
+      "type": "cryptogram",
+      "title": "Quote",
+      "data": {
+        "ciphertext": "Uifsf jt op tqppo fs uijt jt b uspwbj dpodfou."
+      }
+    },
+    {
+      "id": "kakuro-sample-1",
+      "type": "kakuro",
+      "title": "Mini Kakuro",
+      "data": {
+        "width": 5,
+        "height": 5,
+        "grid": [
+          [{"block":true},{"sumRight":7},{"sumRight":6},{"block":true},{"sumRight":4}],
+          [{"sumDown":4},{},{},{"sumDown":3},{}],
+          [{"sumDown":3},{},{},{"sumDown":4},{}],
+          [{"block":true},{"sumRight":3},{"sumRight":4},{"block":true},{"sumRight":3}],
+          [{"sumDown":3},{},{},{"sumDown":3},{}]
+        ]
+      }
+    },
+    {
+      "id": "riddles-palimpsest-acrostic",
+      "type": "riddles",
+      "title": "Ghosts Beneath the Ink",
+      "data": {
+        "prompt": "Painted over, the old still whispers through.\nA second skin conceals an older truth.\nLayers settle; memory bleeds faintly.\nIf you scrape, ghosts of ink return.\nMargins bruise with former marks.\nPages seem new, yet not quite so.\nShadows of strokes resist erasure.\nEven now, the prior voice endures.\nSee it, if you read between the scars.\nThis has been written more than once.",
+        "answers": ["palimpsest", "a palimpsest"],
+        "category": "lateral",
+        "difficulty": 5,
+        "hints": [
+          "What is a page that hides older writing beneath newer writing called?",
+          "Attend to beginnings — the margins speak.",
+          "Take the first letters of each line."
+        ]
+      }
+    },
+    {
+      "id": "riddles-every-other-step",
+      "type": "riddles",
+      "title": "Every Other Step",
+      "data": {
+        "prompt": "Step lightly; broken maps mislead.\nIgnore afterthoughts; angles lie.\nCount backwards; breadcrumbs blur.\nFavor yaw; yet yield.\nFollow rhythms; irregular routes reward.\nHunt inward; narrowing corridors converge.\nSpare none; notations negate.\nTake turns; tangents trick.\nStay hushed; hearing helps.",
+        "answers": ["labyrinth", "maze"],
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "The title is literal.",
+          "From each line, look at the second word only.",
+          "Take the first letter of the second word on each line, top to bottom."
+        ]
+      }
+    },
+    {
+      "id": "riddles-acrostic-self",
+      "type": "riddles",
+      "title": "What I Am, I Tell You",
+      "data": {
+        "prompt": "Attend to beginnings, not ornaments.\nChoose the borders before the body.\nRead what's first, resist the gloss.\nOnly the margins are generous.\nStart at the start of every line.\nTake the initial step each time.\nIgnore the middle's luminous bait.\nCollect the leading letters; name me.",
+        "answers": ["acrostic", "an acrostic"],
+        "category": "lateral",
+        "difficulty": 5,
+        "hints": [
+          "Trust the margins over the middle.",
+          "Read the first letters downward.",
+          "Name the very device you used."
+        ]
+      }
+    },
+    {
+      "id": "riddles-one-true-statement",
+      "type": "riddles",
+      "title": "Exactly One Holds",
+      "data": {
+        "prompt": "Find the unique integer X with 100 ≤ X ≤ 999 such that exactly one of the following statements is true (the other two are false).\n(1) X is divisible by the sum of its digits.\n(2) Reversing the decimal digits of X increases it by 198.\n(3) X is a perfect square.",
+        "answers": ["254"],
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Let X = 100a + 10b + c. Then reverse(X) − X = 99(c − a).",
+          "If (2) holds, 198 = 99 × 2, so c − a = 2 with c > a.",
+          "Try X with hundreds and ones digits that differ by 2, then test (1) and (3).",
+          "One solution is X = 254. Then reverse is 452 (difference 198), X is not divisible by 2+5+4=11, and it is not a square."
+        ]
+      }
+    },
+    {
+      "id": "riddles-telestich-paradox",
+      "type": "riddles",
+      "title": "Endings Know",
+      "data": {
+        "prompt": "Forked roads meet where choices overlap p\nLook back, and the trail doubles as a map a\nForward glances return with their mirror repair r\nStep aside; the center repeats an aria a\nReason coils when answers demand a trade d\nOpposites couple; order seems to forego o\nCross the proof and find you circle back to x",
+        "answers": ["paradox"],
+        "category": "lateral",
+        "difficulty": 5,
+        "hints": [
+          "Nothing new is added; no letters are changed.",
+          "Pay attention to the very ends.",
+          "Take the last letter of each line."
+        ]
+      }
+    },
+    {
+      "id": "riddles-staircase-enigma",
+      "type": "riddles",
+      "title": "Staircase Reading",
+      "data": {
+        "prompt": "Every trail has switchbacks.\nIn notebooks, numbers nest.\nStart inside; ideas ignite instantly.\nGo carefully; give generous guidance.\nMake measured moves; mark middle milestones.\nAim again as alignment arrives atop.",
+        "answers": ["enigma"],
+        "category": "word",
+        "difficulty": 5,
+        "hints": [
+          "Build a staircase across the lines.",
+          "From line n, take word n (count words, punctuation doesn't matter).",
+          "Read the first letter of the nth word on each line, from top to bottom."
+        ]
+      }
+    },
+    {
+      "id": "riddles-every-third-obscurity",
+      "type": "riddles",
+      "title": "Every Third",
+      "data": {
+        "prompt": "Paths often open between choices.\nWeave between brave mistakes.\nKeep steady steps slowly.\nLook closely; clues converge.\nMost usually unseen undercurrents move.\nTake real risks rarely.\nFind inner insights intentionally.\nTrace tenacious threads thoroughly.\nYield youthful yearning yet yoke yourself.",
+        "answers": ["obscurity"],
+        "category": "word",
+        "difficulty": 5,
+        "hints": [
+          "Regular rhythm: choose at a fixed interval.",
+          "From each line, take the third word.",
+          "Read their first letters downward."
+        ]
+      }
+    },
+    {
+      "id": "riddles-center-monolith",
+      "type": "riddles",
+      "title": "Pillars in the Middle",
+      "data": {
+        "prompt": "Blanks meet midnight moments mindfully.\nShadows open outward, then close.\nMirrors never negotiate neatly now.\nLabyrinths often overwhelm orientation utterly.\nCorners lean, levels listing lightly.\nSilence invites insight inward warmly.\nTime turns tangled threads thoroughly.\nHalls hum; horizons hesitate here.",
+        "answers": ["monolith"],
+        "category": "lateral",
+        "difficulty": 5,
+        "hints": [
+          "Ignore the edges; privilege the center.",
+          "Each line has an odd number of words.",
+          "Take the middle word of each line and read their initials."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-einstein",
+      "type": "riddles",
+      "title": "Five Houses, One Pet",
+      "data": {
+        "prompt": "Five houses stand in a row, each with a different color, nationality, drink, cigar, and pet. Clues: (1) The Brit lives in the red house. (2) The Swede keeps dogs. (3) The Dane drinks tea. (4) The green house is just to the left of the white house. (5) The green house's owner drinks coffee. (6) The person who smokes Pall Mall rears birds. (7) The owner of the yellow house smokes Dunhill. (8) The man in the center house drinks milk. (9) The Norwegian lives in the first house. (10) The man who smokes Blends lives next to the one who keeps cats. (11) The man who keeps horses lives next to the man who smokes Dunhill. (12) The owner who smokes BlueMaster drinks beer. (13) The German smokes Prince. (14) The Norwegian lives next to the blue house. (15) The man who smokes Blends has a neighbor who drinks water. Who owns the fish?",
+        "answers": ["german", "the german", "the german owns the fish", "german owns the fish"],
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Represent possibilities in a 5×5 grid and eliminate via constraints.",
+          "Use (4) to place green/white block; use (8) and (9) to anchor positions.",
+          "Propagate neighbor relations (10), (11), (14), (15) to completion."
+        ]
+      }
+    },
+    {
+      "id": "riddles-logic-blue-eyes-100",
+      "type": "riddles",
+      "title": "The Blue Eyes Induction",
+      "data": {
+        "prompt": "On an island, 100 people have blue eyes, others have not. Everyone sees others' eyes but not their own; no communication is allowed. A visitor publicly announces: 'I see someone with blue eyes.' Each midnight, anyone who deduces their eye color must leave. How many nights until all blue-eyed people leave?",
+        "answers": ["100", "one hundred", "100 nights", "100th night"],
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Solve the 1-blue-eyed base case, then 2, and generalize.",
+          "The public announcement creates common knowledge at level 1.",
+          "Induction on k shows departure on the k-th night."
+        ]
+      }
+    },
+    {
+      "id": "riddles-math-cyclic-142857",
+      "type": "riddles",
+      "title": "Multiples as Permutations",
+      "data": {
+        "prompt": "Find the smallest positive integer N such that 2N, 3N, 4N, 5N, and 6N are all permutations of the digits of N.",
+        "answers": ["142857"],
+        "category": "math",
+        "difficulty": 5,
+        "hints": [
+          "Consider fractions with purely repeating decimals.",
+          "Look for a length-6 repetend whose multiples rotate.",
+          "Think of 1/7."
+        ]
+      }
+    },
+    {
+      "id": "riddles-bridge-and-torch",
+      "type": "riddles",
+      "title": "Four at the Bridge",
+      "data": {
+        "prompt": "Four people need to cross a bridge at night with one torch. They take 1, 2, 7, and 10 minutes respectively. Only two can cross at a time and the group must walk at the slower person's pace; the torch must be carried. What is the minimum total time to get everyone across?",
+        "answers": ["17", "17 minutes"],
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Try both strategies: always send the fastest back vs pairing the two slowest together smartly.",
+          "Consider using the two fastest to shuttle the torch.",
+          "Sequence: 1&2 cross, 1 returns, 7&10 cross, 2 returns, 1&2 cross."
+        ]
+      }
+    },
+    {
+      "id": "riddles-cryptarithm-send-more-money",
+      "type": "riddles",
+      "title": "SEND + MORE = MONEY",
+      "data": {
+        "prompt": "In the alphametic SEND + MORE = MONEY, distinct letters represent distinct decimal digits and no number has a leading zero. What is the value of MONEY?",
+        "answers": ["10652"],
+        "answerType": "number",
+        "category": "math",
+        "difficulty": 5,
+        "hints": [
+          "The leading letters S and M cannot be zero.",
+          "Carry from S+M gives M=1.",
+          "Systematically propagate carries to deduce all digits."
+        ]
+      }
+    },
+    {
+      "id": "riddles-coins-12-counterfeit",
+      "type": "riddles",
+      "title": "Twelve Coins, Unknown Bias",
+      "data": {
+        "prompt": "You have 12 visually identical coins; one is counterfeit and is either heavier or lighter than the others. Using a balance scale, what is the minimum number of weighings required to always determine which coin is counterfeit and whether it is heavier or lighter?",
+        "answers": ["3", "three"],
+        "answerType": "number",
+        "category": "logic",
+        "difficulty": 5,
+        "hints": [
+          "Each weighing has three outcomes; consider information capacity.",
+          "Partition possibilities to keep them balanced across outcomes.",
+          "There exists a decision tree that resolves in exactly three weighings."
+        ]
+      }
+    }
+  ]
+}
+

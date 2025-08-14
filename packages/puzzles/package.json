@@ -1,0 +1,14 @@
+{
+  "name": "@repo/puzzles",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "index.json",
+  "scripts": {
+    "build-index": "node ./scripts/build-index.mjs"
+  },
+  "devDependencies": {
+    "flexsearch": "^0.7.31"
+  }
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "puzzles",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Privacy-first, offline-capable puzzles compendium (static, no accounts)",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/plugins/*"
+  ],
+  "scripts": {
+    "build": "npm run -w @repo/puzzles build-index && npm run -w @repo/engine build && npm run -w @repo/plugins-crosswords build && npm run -w @repo/plugins-cryptogram build && npm run -w @repo/plugins-kakuro build && npm run -w @repo/plugins-logic-grid build && npm run -w @repo/plugins-nonograms build && npm run -w @repo/plugins-riddles build && npm run -w @repo/plugins-sudoku build && npm run -w @repo/plugins-wordsearch build && npm run -w @repo/plugins-akari build && npm run -w @repo/plugins-hitori build && npm run -w @repo/plugins-hashi build && npm run -w @repo/plugins-slitherlink build && npm run -w @repo/plugins-nurikabe build && npm run -w @repo/plugins-kenken build && npm run -w @repo/plugins-skyscrapers build && npm run -w @repo/ui build && npm run -w web build",
+    "dev": "npm run -w web dev",
+    "lint": "echo 'No linter configured yet'",
+    "typecheck": "echo 'Type checking delegated to app build'",
+    "clean": "git clean -fdX"
+  },
+  "author": "",
+  "license": "MIT"
+}

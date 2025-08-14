@@ -1,0 +1,10 @@
+{
+  "name": "Puzzles",
+  "short_name": "Puzzles",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0f19",
+  "theme_color": "#0b0f19",
+  "icons": []
+}
+
