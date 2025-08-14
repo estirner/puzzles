@@ -24,13 +24,29 @@ export function Header() {
             <span className="inline-block h-2 w-2 rounded-full bg-cyan-400 shadow-[0_0_20px_6px_rgba(34,211,238,0.6)]" />
             <span className="text-2xl md:text-3xl font-extrabold tracking-tight gradient-text">Puzzles</span>
           </Link>
-          <nav className="hidden items-center gap-2 md:flex">
-            {nav.map((n) => (
-              <InteractiveCard key={n.href} href={n.href} className="nav-card">
-                <span className="px-2 text-sm">{n.label}</span>
-              </InteractiveCard>
-            ))}
-          </nav>
+          <div className="flex items-center gap-3">
+            <nav className="hidden items-center gap-2 md:flex">
+              {nav.map((n) => (
+                <InteractiveCard key={n.href} href={n.href} className="nav-card">
+                  <span className="px-2 text-sm">{n.label}</span>
+                </InteractiveCard>
+              ))}
+            </nav>
+            <a
+              href="https://github.com/estirner/puzzles"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View source on GitHub"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md ring-1 ring-white/20 hover:ring-white/40 transition"
+              title="GitHub"
+            >
+              <img
+                src="/github.svg"
+                alt="GitHub"
+                className="h-5 w-5 opacity-80 hover:opacity-100"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </header>
