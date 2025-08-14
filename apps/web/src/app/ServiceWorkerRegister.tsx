@@ -4,9 +4,9 @@ import { useEffect } from "react";
 export default function ServiceWorkerRegister() {
   useEffect(() => {
     if (process.env.NODE_ENV === 'production' && "serviceWorker" in navigator) {
-      // Support GitHub Pages subpaths by using base path from current location
-      const base = (document.querySelector('base')?.getAttribute('href')) || '/';
-      const swUrl = new URL('sw.js', base).toString();
+      // Use an absolute base URL (document.baseURI or <base>.href) to avoid invalid URL errors
+      const baseHref = (document.querySelector('base') as HTMLBaseElement | null)?.href || document.baseURI || window.location.href;
+      const swUrl = new URL('sw.js', baseHref).toString();
       navigator.serviceWorker.register(swUrl).catch(() => {});
     }
     // Dev: ensure any previously installed SW is removed and its caches cleared
